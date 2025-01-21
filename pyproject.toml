@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=62.1.0", "wheel", "twine"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-json"
+version = "0.1.1"
+description = "A JSON library wrapper that gracefully handles markdown-wrapped JSON from LLMs."
+readme = "README.md"
+requires-python = ">=3.6"
+authors = [
+  { name = "Alex Volkov", email = "alex@alexw.me" }
+]
+license = { file = "LICENSE" }
+keywords = ["json", "LLMs", "markdown", "ai"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+dynamic = []  
+
+[project.urls]
+Homepage = "https://github.com/altryne/llm-json"
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.0",
+]

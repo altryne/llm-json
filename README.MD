@@ -1,7 +1,8 @@
-# llm-json
+# llm-json - stop begging LLMs for valid JSON
+
+![llm-json](https://cln.sh/Dkx2W8Jr+)
+
 [![PyPI version](https://img.shields.io/pypi/v/llm-json)](https://pypi.org/project/llm-json)
-[![Build Status](https://github.com/altryne/llm-json/actions/workflows/tests.yml/badge.svg)](https://github.com/altryne/llm-json/actions)
-[![Coverage Status](https://coveralls.io/repos/github/altryne/llm-json/badge.svg)](https://coveralls.io/github/altryne/llm-json)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **llm-json** is a Python package that acts as a drop-in replacement for the standard \json\ library. It automatically handles JSON strings that are often returned by Large Language Models (LLMs) wrapped in Markdown code fences or backticks—so you don’t have to beg the AI to always produce “valid JSON.”
@@ -15,6 +16,12 @@ Grab the latest release from PyPI:
 ```bash
 uv pip install llm-json
 ```
+
+## Can't you just use Structured Outputs?
+Yes, but not all providers support them in the same way
+
+## Why not use Instructor / Outlines
+I love both of those tools, this is just a simple wrapper to make my life easier, I don't need a full blown library for structured outputs, just a simple json validator that works the way LLMs do!
 
 ## Usage
 The core idea is that **llm-json** works exactly like the standard Python `json` library, but with automatic fallback parsing for those pesky backticks:
