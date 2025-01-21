@@ -3,6 +3,7 @@
 ![llm-json](https://cln.sh/Dkx2W8Jr+)
 
 [![PyPI version](https://img.shields.io/pypi/v/llm-json)](https://pypi.org/project/llm-json)
+[![Upload Python Package](https://github.com/altryne/llm-json/actions/workflows/python-publish.yml/badge.svg)](https://github.com/altryne/llm-json/actions/workflows/python-publish.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **llm-json** is a Python package that acts as a drop-in replacement for the standard \json\ library. It automatically handles JSON strings that are often returned by Large Language Models (LLMs) wrapped in Markdown code fences or backticks—so you don’t have to beg the AI to always produce “valid JSON.”
