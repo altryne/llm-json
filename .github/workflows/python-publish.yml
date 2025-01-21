@@ -40,6 +40,12 @@ jobs:
         run: |
           python -m build
           
+      - name: Verify distribution contents
+        run: |
+          python -m pip install check-manifest
+          check-manifest
+          tar tzf dist/*.tar.gz          
+
       - name: Upload distributions
         uses: actions/upload-artifact@v4
         with:
